@@ -1,0 +1,13 @@
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 0.15rem 0;
+    padding-bottom: 0;
+}
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.main-sec h2
+{
+    margin-top: 15px;
+}

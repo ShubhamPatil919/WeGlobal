@@ -1,0 +1,56 @@
+nav
+{
+    background-color: var(--bg-black-50);
+    padding-top: 5px;
+}
+h4{
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+}
+.tc
+{
+    text-align: center;
+}
+i.fb
+{
+    color: blue;
+    width: 40px;
+    height: 40px;
+}
+.tw
+{
+    color: #00acee;
+}
+.wa
+{
+    color:  #25D366;
+}
+.in
+{
+    color: #8a3ab9;
+}
+/* middle footer css */
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+li{
+    padding-bottom: 5px;
+    color: var(--text-color);
+}
+li:hover
+{
+    border-bottom: 2px solid var(--primary-color);
+   color: var(--text-black-900);
+    cursor: pointer;
+}

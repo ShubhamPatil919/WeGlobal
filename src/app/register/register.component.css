@@ -1,0 +1,16 @@
+.card
+{
+    margin: 80px;
+    padding: 10px;
+    box-shadow: inset;
+    background-color: var(--bg-black-100);
+   
+}
+h2{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.form-group
+{
+    padding-bottom: 5px;
+}

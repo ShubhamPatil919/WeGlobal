@@ -1,0 +1,27 @@
+.top-banner
+{
+    width: 90%;
+    background: url('../../assets/img-13.jpg') no-repeat left;
+    background-size: cover;
+    padding: 10.875rem 0 9.375rem;
+    margin-top: 40px;
+
+}
+p{
+    color: var(--black-color);
+}
+
+
+/*media responsive*/
+@media (max-width : 450px)
+{
+    .top-banner
+    {
+        padding:3.875rem 0 9.375rem;
+    }
+    button{
+        margin: 2px;
+        padding: 2px;
+    }
+    
+}

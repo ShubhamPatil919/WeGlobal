@@ -1,0 +1,31 @@
+.about-section
+{
+    background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding-left: 2rem;
+}
+ul{
+    list-style: none;
+    text-align: left;
+}
+li{
+    padding: 5px;
+    font-family: var(--seconadry-font);
+    color: var(--text-black-700);
+}
+li i{
+    margin-right: 5px;
+    color: var(--secondary-color);
+}
+@media (max-width: 450px)
+{
+    .rob2
+    {
+        display: none;
+    }
+}

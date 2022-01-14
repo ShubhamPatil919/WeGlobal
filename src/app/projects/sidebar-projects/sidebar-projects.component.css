@@ -1,0 +1,24 @@
+.card
+{
+    margin-top: 100px;
+}
+.list-group
+{
+    margin: 5px;
+}
+.list-group .list-group-item i
+{
+    margin-right: 10px;
+}
+.list-group .list-group-item:hover
+{
+    background-color: var(--bg-black-900);
+    font-size: large;
+}
+@media (max-width: 450px)
+{
+    .card
+{
+    margin-top: 10px;
+}
+}

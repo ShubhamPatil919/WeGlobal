@@ -1,0 +1,38 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light navigation-wrap">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/logo.png" width="170" height="60" alt="">
+      <span class="comName">DiGiT Global</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+       
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['']" routerLinkActive="router-link-active"  aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="router-link-active"  href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#client">Client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <button [routerLink]="['/register']" class="main-btn">Register <i class="fas fa-user-plus"></i></button>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

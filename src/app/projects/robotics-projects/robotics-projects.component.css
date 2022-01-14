@@ -1,0 +1,32 @@
+h2,p,h5,h4{
+    text-align: center;
+}
+h4{
+    font-size: medium;
+    /* background-color: var(--blue-color); */
+   
+    color: var(--white-color);
+    
+}
+.cont
+{
+    margin :2px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+li{
+    padding: 0;
+    margin: 0;
+    color: var(--white-color);
+    font-style: italic;
+  
+}
+.img-fluid
+{
+    border-radius: 10px;
+}

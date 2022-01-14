@@ -1,1 +1,257 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&family=Bitter:ital,wght@0,100;0,200;0,300;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,900&family=El+Messiri:wght@400;500;600&family=Lemonada:wght@300;400&family=Lobster&family=Orbitron:wght@400;500;700&family=Roboto+Slab:wght@200;600;900&family=Ruda:wght@400;500&family=Tourney:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400;1,500;1,600;1,700&family=Yanone+Kaffeesatz:wght@400;500;600&display=swap');
+
+
+@font-face {
+    font-family: digitName;
+    src: url(../src/assets/serpentine.otf);
+  }
+  @font-face {
+    font-family: corporate;
+    src: url(../src/assets/corporate.otf);
+  }
+  @font-face {
+    font-family: nazalition;
+    src: url(../src/assets/nasalization-rg.otf);
+  }
+
+
+*,
+*::after
+*:before
+{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active
+:hover
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover 
+{
+    text-decoration: none;
+}
+
+a:hover {
+    color :var(--primary-color) !important;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --primary-color : #006c36;
+    --secondary-color : #43121d;
+    --third-color : #f98169;
+    --white-color :#fff;
+    --text-color : #999;
+    --black-color :#000;
+    --blue-color : #03BFFC;
+    --primary-font : 'Roboto',sans-serif;
+    --seconadry-font : 'Arial',sans-serif;
+    --bg-black-900 : #f2f2fc;
+    --bg-black-100 : #fdf9ff;
+    --bg-black-50 : #e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    --skin-color : #006c36;
+}
+p {
+    word-wrap: break-word;
+  }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+/*cutom scroll bar */
+::-webkit-scrollbar
+{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track
+{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--primary-color);
+
+}
+
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+    font-family: 'Tourney';
+}
+h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: var(--secondary-color);
+    font-family: corporate;
+    text-shadow: 2px 2px 5px var(--primary-color);
+}
+h4{
+    color: var(--secondary-color);
+    font-family: var(--seconadry-font);
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+.main-btn
+{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition:  all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+.white-btn
+{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition:  all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+
+}
+.main-btn:hover
+{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.wrapper
+{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.text-content
+{
+    width: 70%;
+    margin: auto;
+}
+.counter-section h2,
+.textimonial-section h2,
+.book-food-text h2
+{
+    color: var(--white-color);
+}
+
+.text-sec
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*media responsive*/
+@media (max-width: 1024px) {
+  
+}
+@media (max-width: 991px) {
+
+  /* custom classes */
+  .text-content {
+      width: 100%;
+  }
+/* navbar brand */
+.navigation-wrap .navbar-brand img
+{
+    height : 3.8125rem;
+}
+.navigation-wrap
+{
+    text-align: center;
+    background-color: var(--white-color);
+}
+.navigation-wrap .nav-link
+{
+    line-height: 1.875rem;
+
+}
+
+/* banner design */
+.top-banner
+{
+    padding:9.375rem 0 9.375rem;
+
+}
+.story-section
+{
+    height: auto;
+    padding: 3rem 0;
+}
+
+
+    
+}
+@media (max-width: 767px) {
+
+   h1{
+        font-size: 2.8rem;
+       
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 2.625rem;
+
+    }
+.top-banner
+{
+    padding:10.875rem 0 9.375rem;
+
+}
+
+
+    
+}
